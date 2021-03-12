@@ -5,10 +5,17 @@ package co.cyclopsapps.kotlintestpoo
  */
 
 fun main() {
-    println("Hello World")
     val obj = Hola()
-    obj.saludar()
     val obj2 = Sumar()
+    print("test 1")
+    method(obj, obj2)
+}
+
+fun method(obj: Hola, obj2: Sumar) {
+    println("Hello World")
+    // val obj = Hola()
+    obj.saludar()
+    // val obj2 = Sumar()
     println("Ingrese el primer numero: ")
     val num1 = readLine()!!.toInt()
     println("Ingrese el segundo numero: ")
